@@ -47,7 +47,7 @@
 		"dev": "OUTPUT=public npm run -s _prepare && webpack --progress --config webpack/configs/development.js",
 		"build": "OUTPUT=build npm run -s _prepare && webpack --progress --config webpack/configs/production.js",
 		"lint:js": "eslint --fix --ext js,json .",
-		"lint-modified:js": "npm run _git-diff -s -- *.js *.json | xargs npm run eslint --fix",
+		"lint-modified:js": "npm run _git-diff -s -- *.js *.json | xargs eslint --fix",
 		"lint:css": "stylelint --fix '**/*.css'",
 		"lint-modified:css": "npm run _git-diff -s -- *.css| xargs stylelint",
 		"lint": "npm run lint:js && npm run lint:css",
