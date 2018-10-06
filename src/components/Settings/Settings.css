@@ -1,0 +1,44 @@
+.Settings {
+	padding: 30px;
+}
+
+.Settings__title {
+	font-size: 14px;
+	font-weight: normal;
+
+	color: rgba(255, 255, 255, .9);
+}
+
+.Settings__sliders {
+	height: 200px;
+}
+
+.Settings__row + .Settings__row {
+	margin-top: 30px;
+}
+
+.Settings__slider {
+	height: 20px;
+}
+
+.Settings .slider-handle {
+	background: #fd8d01;
+}
+
+.Settings__buttons {
+	margin-top: 40px;
+}
+
+.Settings__button {
+	width: 100%;
+
+	margin-top: 20px;
+}
+
+.Settings .slider.slider-horizontal {
+	width: 100%;
+}
+
+.in {
+	opacity: .9;
+}

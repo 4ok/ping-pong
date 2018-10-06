@@ -1,0 +1,18 @@
+.BallsItem {
+	font-size: 14px;
+	font-weight: bold;
+
+	position: absolute;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 1px;
+	height: 1px;
+
+	color: #fff;
+
+	border-radius: 4px;
+}
