@@ -1,7 +1,7 @@
 # Ping Pong
 
 - [Demo](#demo)
-- [Supported browsers](#supported-browsers)
+	- [Supported browsers](#supported-browsers)
 - [Installation](#installation)
 - [Make build](#make-build)
 - [Development](#development)
