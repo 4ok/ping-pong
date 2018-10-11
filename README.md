@@ -15,7 +15,7 @@
 
 https://4ok.github.io/ping-pong/
 
-### Supported browsers
+## Supported browsers
 
 \> 1%<br>
 not dead<br>
