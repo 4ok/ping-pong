@@ -12,7 +12,7 @@ import './Balls.css'
 const CLICK_THROTTLE_TIMEOUT = 200
 const STEP_ACCELERATION_RATIO = 1 / 4
 const MIN_ROTATION_SPEED = 0.3
-const MAX_ROTATION_SPEED = 3
+const MAX_ROTATION_SPEED = 6
 
 const colorHash = new ColorHash()
 
@@ -330,13 +330,10 @@ export default @autobind class Balls extends Component {
 			}
 
 			const neighborItem = items[Number(!i)]
-			let step
 
-			if ((neighborItem.size / 2) <= minSize) {
-				step = Math.max(item.step, neighborItem.step)
-			} else {
-				step = item.step + (STEP_ACCELERATION_RATIO * Number(item.size < neighborItem.size))
-			}
+			const step = ((neighborItem.size / 2) <= minSize)
+				? Math.max(item.step, neighborItem.step) * STEP_ACCELERATION_RATIO
+				: item.step + (STEP_ACCELERATION_RATIO * Number(item.size < neighborItem.size))
 
 			const collisionDirection = item.directions[collisionCoordName]
 
